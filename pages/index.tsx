@@ -1,22 +1,8 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
-import styled from "styled-components";
-import { FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
-import Link from "components/link";
 import Header from "components/header";
+import LinksSection from "components/links-section";
 import Footer from "components/footer";
-
-const SCLinksButtonSection = styled.div`
-  flex-grow: 1;
-`;
-
-const SCPageWrapper = styled.div`
-  height: 100%;
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-`;
 
 const Home: NextPage = () => {
   return (
@@ -30,28 +16,9 @@ const Home: NextPage = () => {
           rel="stylesheet"
         />
       </Head>
-      <SCPageWrapper>
-        <Header>
-          <Image
-            src="/avatar.png"
-            alt="Vercel Logo"
-            width={150}
-            height={150}
-            className="image"
-          />
-          <h1>Rafał Apriasz</h1>
-          <p>Software Engineer specialized in frontend technologies</p>
-        </Header>
-        <SCLinksButtonSection>
-          <Link icon={<FaGithub />} to="www.google.pl" title="Github" />
-          <Link icon={<FaInstagram />} to="www.google.pl" title="Instagram" />
-          <Link icon={<FaLinkedin />} to="www.google.pl" title="Linkedin" />
-          <Link to="to:mailto@gmail.com" title="Contact me" />
-        </SCLinksButtonSection>
-        <Footer>
-          <p>© Copyright 2022</p>
-        </Footer>
-      </SCPageWrapper>
+      <Header />
+      <LinksSection />
+      <Footer />
     </>
   );
 };

@@ -14,7 +14,7 @@ export const SCLink = styled.a`
   );
   border-radius: 8px;
   padding: 1em 2em;
-  width: 30em;
+  width: 600px;
   @media only screen and (max-width: 600px) {
     width: 90%;
   }

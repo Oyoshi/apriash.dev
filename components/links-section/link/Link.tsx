@@ -1,11 +1,6 @@
-import { FC, ReactNode } from "react";
+import { FC } from "react";
+import { LinkProps } from "./Link.interface";
 import { SCLink } from "./Link.style";
-
-interface LinkProps {
-  to: string;
-  title: string;
-  icon?: ReactNode;
-}
 
 const Link: FC<LinkProps> = ({ to, title, icon }) => {
   return (
