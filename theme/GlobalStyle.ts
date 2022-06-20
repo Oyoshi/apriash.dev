@@ -23,10 +23,12 @@ const GlobalStyle = createGlobalStyle`
 
   h1, h2, h3 {
     font-weight: ${({ theme }) => theme.fontWeightBold};
+    transition: 0.3s color ease-out;
   }
 
   p, a {
     font-weight: ${({ theme }) => theme.fontWeightReg};
+    transition: 0.3s color ease-out;
   }
 `;
 

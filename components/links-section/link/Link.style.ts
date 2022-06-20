@@ -21,9 +21,9 @@ export const SCLink = styled.a`
   }
   margin: ${({ theme }) => theme.spacings[2]} auto;
   text-align: center;
-  color: ${({ theme }) => theme.primary};
+  color: #ffffff;
   font-size: ${({ theme }) => theme.fontSizeMd};
-  transition: 0.3s all ease-out;
+  transition: 0.3s transform ease-out;
 
   :hover {
     transform: scale(1.05);

@@ -1,4 +1,5 @@
-import GlobalStyle from "./GlobalStyle";
-export { theme } from "./theme";
+import ThemeProvider from "./ThemeProvider";
+export type { IThemeContext } from "./ThemeProvider";
+export { ThemeContext } from "./ThemeProvider";
 
-export default GlobalStyle;
+export default ThemeProvider;

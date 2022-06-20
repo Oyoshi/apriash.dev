@@ -29,5 +29,6 @@ export const SCHeader = styled.header`
 
   .image {
     border-radius: 50%;
+    cursor: pointer;
   }
 `;
