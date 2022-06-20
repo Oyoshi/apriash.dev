@@ -20,6 +20,14 @@ const GlobalStyle = createGlobalStyle`
     display: flex;
     flex-direction: column;
   }
+
+  h1, h2, h3 {
+    font-weight: ${({ theme }) => theme.fontWeightBold};
+  }
+
+  p, a {
+    font-weight: ${({ theme }) => theme.fontWeightReg};
+  }
 `;
 
 export default GlobalStyle;

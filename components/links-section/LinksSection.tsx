@@ -1,6 +1,28 @@
+import { FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
 import { SCLinksSection } from "./LinksSection.style";
 import Link, { LinkProps } from "./link";
-import { LINKS } from "./LinksSection.constant";
+
+const LINKS = [
+  {
+    icon: <FaGithub />,
+    to: "www.google.pl",
+    title: "Github",
+  },
+  {
+    icon: <FaInstagram />,
+    to: "www.google.pl",
+    title: "Instagram",
+  },
+  {
+    icon: <FaLinkedin />,
+    to: "www.google.pl",
+    title: "Linkedin",
+  },
+  {
+    to: "www.google.pl",
+    title: "Contact Me",
+  },
+];
 
 const LinksSection = () => (
   <SCLinksSection>

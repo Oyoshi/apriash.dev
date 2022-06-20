@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const SCHeader = styled.header`
   margin: 0 auto;
-  margin-top: 3em;
+  margin-top: ${({ theme }) => theme.spacings[5]};
   @media only screen and (max-width: ${({ theme }) => theme.maxWidth}) {
     width: 90%;
   }
@@ -24,7 +24,7 @@ export const SCHeader = styled.header`
   }
 
   .text {
-    margin: 2em 0;
+    margin: ${({ theme }) => theme.spacings[4]} 0;
   }
 
   .image {

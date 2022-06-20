@@ -13,12 +13,13 @@ export const SCLink = styled.a`
         )}
   );
   border-radius: 8px;
-  padding: 1em 2em;
+  padding: ${({ theme }) => theme.spacings[3]}
+    ${({ theme }) => theme.spacings[4]};
   width: ${({ theme }) => theme.maxWidth};
   @media only screen and (max-width: ${({ theme }) => theme.maxWidth}) {
     width: 90%;
   }
-  margin: 0.75em auto;
+  margin: ${({ theme }) => theme.spacings[2]} auto;
   text-align: center;
   color: ${({ theme }) => theme.primary};
   font-size: ${({ theme }) => theme.fontSizeMd};
