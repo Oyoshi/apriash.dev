@@ -10,8 +10,10 @@ const Header = () => (
       height={150}
       className="image"
     />
-    <h1>Rafał Apriasz</h1>
-    <p>Software Engineer specialized in frontend technologies</p>
+    <div className="text">
+      <h1>Rafał Apriasz</h1>
+      <p>Software Engineer specialized in frontend technologies</p>
+    </div>
   </SCHeader>
 );
 

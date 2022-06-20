@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const SCHeader = styled.header`
   margin: 0 auto;
   margin-top: 3em;
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: ${({ theme }) => theme.maxWidth}) {
     width: 90%;
   }
   flex: 1;
@@ -14,13 +14,17 @@ export const SCHeader = styled.header`
   text-align: center;
 
   h1 {
-    margin: 1em 0 0.5em 0;
-    font-size: 3em;
+    margin: 0;
+    font-size: ${({ theme }) => theme.fontSizeLg};
   }
 
   p {
     margin: 0;
-    font-size: 1.2em;
+    font-size: ${({ theme }) => theme.fontSizeMd};
+  }
+
+  .text {
+    margin: 2em 0;
   }
 
   .image {

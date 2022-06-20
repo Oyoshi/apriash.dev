@@ -14,14 +14,14 @@ export const SCLink = styled.a`
   );
   border-radius: 8px;
   padding: 1em 2em;
-  width: 600px;
-  @media only screen and (max-width: 600px) {
+  width: ${({ theme }) => theme.maxWidth};
+  @media only screen and (max-width: ${({ theme }) => theme.maxWidth}) {
     width: 90%;
   }
   margin: 0.75em auto;
   text-align: center;
   color: ${({ theme }) => theme.primary};
-  font-size: 18px;
+  font-size: ${({ theme }) => theme.fontSizeMd};
   transition: 0.3s all ease-out;
 
   :hover {
