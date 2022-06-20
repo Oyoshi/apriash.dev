@@ -15,6 +15,9 @@ export const SCLink = styled.a`
   border-radius: 8px;
   padding: 1em 2em;
   width: 30em;
+  @media only screen and (max-width: 600px) {
+    width: 90%;
+  }
   margin: 0.75em auto;
   text-align: center;
   color: ${({ theme }) => theme.primary};
