@@ -1,14 +1,12 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import Image from "next/image";
 import styled from "styled-components";
-
-const SCPageContainer = styled.div`
-  width: 100vw;
-  height: 100vh;
-`;
+import { FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
+import Link from "components/link";
 
 const SCHeader = styled.header`
-  padding-top: 1.5em;
+  margin-top: 2.5em;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -20,68 +18,12 @@ const SCHeader = styled.header`
   }
 
   .image {
-    width: 100px;
-    height: 100px;
     border-radius: 50%;
-    background: rgb(236, 153, 119);
-    background: linear-gradient(
-      114deg,
-      rgba(236, 153, 119, 1) 0%,
-      rgba(204, 100, 117, 1) 50%,
-      rgba(76, 40, 110, 1) 100%
-    );
   }
 `;
 
 const SCLinksButtonSection = styled.section`
   margin: 1em auto;
-
-  .link {
-    display: block;
-    cursor: pointer;
-    background: rgb(236, 153, 119);
-    background: linear-gradient(
-      114deg,
-      rgba(236, 153, 119, 1) 0%,
-      rgba(204, 100, 117, 1) 50%,
-      rgba(76, 40, 110, 1) 100%
-    );
-    border-radius: 8px;
-    padding: 1em 2em;
-    width: 30em;
-    margin: 0.75em auto;
-    text-align: center;
-    color: #fff;
-    font-size: 18px;
-    transition: 0.3s all ease-out;
-
-    :hover {
-      transform: scale(1.05);
-    }
-  }
-`;
-
-const SCSocialLinksSection = styled.section`
-  margin: 2em auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-
-  .image {
-    display: inline-block;
-    margin: 0 2em;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background: rgb(236, 153, 119);
-    background: linear-gradient(
-      114deg,
-      rgba(236, 153, 119, 1) 0%,
-      rgba(204, 100, 117, 1) 50%,
-      rgba(76, 40, 110, 1) 100%
-    );
-  }
 `;
 
 const SCFooter = styled.footer`
@@ -107,25 +49,27 @@ const Home: NextPage = () => {
           rel="stylesheet"
         />
       </Head>
-      <SCPageContainer>
-        <SCHeader>
-          <div className="image" />
-          <h1>Rafał Apriasz</h1>
-        </SCHeader>
-        <SCLinksButtonSection>
-          <a className="link">My Website 1</a>
-          <a className="link">My Blog</a>
-          <a className="link">My Website 2</a>
-        </SCLinksButtonSection>
-        <SCSocialLinksSection>
-          <div className="image" />
-          <div className="image" />
-          <div className="image" />
-        </SCSocialLinksSection>
-        <SCFooter>
-          <p>© Copyright 2022</p>
-        </SCFooter>
-      </SCPageContainer>
+      <SCHeader>
+        <Image
+          src="/avatar.png"
+          alt="Vercel Logo"
+          width={150}
+          height={150}
+          className="image"
+          style={{ background: "transparent" }}
+        />
+        <h1>Rafał Apriasz</h1>
+        <p>Software Engineer speciliazed in frontend technologies</p>
+      </SCHeader>
+      <SCLinksButtonSection>
+        <Link icon={<FaGithub />} to="www.google.pl" title="Github" />
+        <Link icon={<FaInstagram />} to="www.google.pl" title="Instagram" />
+        <Link icon={<FaLinkedin />} to="www.google.pl" title="Linkedin" />
+        <Link to="to:mailto@gmail.com" title="Contact me" />
+      </SCLinksButtonSection>
+      <SCFooter>
+        <p>© Copyright 2022</p>
+      </SCFooter>
     </>
   );
 };

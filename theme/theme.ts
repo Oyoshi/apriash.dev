@@ -1,16 +1,15 @@
 interface Theme {
   fontFamily: string;
-  background: string;
   primary: string;
-  //secondary: string;
-  //accent: string;
-  //accentDark: string;
+  secondary: string;
+  gradient: Array<string>;
 }
 
 export const theme: Theme = {
   fontFamily: '"Rubik", sans-serif',
-  background: "#1f1e26",
   primary: "#ffffff",
+  secondary: "#1f1e26",
+  gradient: ["#ec9977", "#cc6475", "#4c286e"],
 };
 
 declare module "styled-components" {
