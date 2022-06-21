@@ -19,7 +19,7 @@ export const SCHeader = styled.header`
   }
 
   p {
-    margin: 0;
+    margin: ${({ theme }) => theme.spacings[2]} 0;
     font-size: ${({ theme }) => theme.fontSizeMd};
   }
 
@@ -32,9 +32,19 @@ export const SCHeader = styled.header`
     cursor: pointer;
   }
 
+  .images {
+    height: 150px;
+    width: 100%;
+    position: relative;
+  }
+
   .image-wrapper {
     position: absolute;
-    top: ${({ theme }) => theme.spacings[5]};
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
     z-index: 100;
   }
 

@@ -6,7 +6,7 @@ const LINKS = [
   {
     icon: <FaGithub />,
     to: "https://github.com/Oyoshi",
-    title: "Github",
+    title: "GitHub",
   },
   {
     icon: <FaInstagram />,
@@ -16,7 +16,7 @@ const LINKS = [
   {
     icon: <FaLinkedin />,
     to: "https://www.linkedin.com/in/rafal-apriasz",
-    title: "Linkedin",
+    title: "LinkedIn",
   },
   {
     to: "mailto:rafal.apriasz@gmail.com",
