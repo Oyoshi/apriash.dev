@@ -9,7 +9,10 @@ const Home: NextPage = () => {
     <>
       <Head>
         <title>Rafał Apriasz - Frontend Developer</title>
-        <meta name="description" content="My like LinkTree website" />
+        <meta
+          name="description"
+          content="Personal Website inspired by LinkTree"
+        />
         <link rel="icon" href="/favicon.ico" />
         <link
           href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap"
