@@ -5,21 +5,21 @@ import Link, { LinkProps } from "./link";
 const LINKS = [
   {
     icon: <FaGithub />,
-    to: "www.google.pl",
+    to: "https://github.com/Oyoshi",
     title: "Github",
   },
   {
     icon: <FaInstagram />,
-    to: "www.google.pl",
+    to: "https://www.instagram.com/_rafalolo_",
     title: "Instagram",
   },
   {
     icon: <FaLinkedin />,
-    to: "www.google.pl",
+    to: "https://www.linkedin.com/in/rafal-apriasz",
     title: "Linkedin",
   },
   {
-    to: "www.google.pl",
+    to: "mailto:rafal.apriasz@gmail.com",
     title: "Contact Me",
   },
 ];

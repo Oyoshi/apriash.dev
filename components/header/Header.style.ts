@@ -31,4 +31,20 @@ export const SCHeader = styled.header`
     border-radius: 50%;
     cursor: pointer;
   }
+
+  .image-wrapper {
+    position: absolute;
+    top: ${({ theme }) => theme.spacings[5]};
+    z-index: 100;
+  }
+
+  .show {
+    opacity: 1;
+    transition: 0.3s opacity ease-out;
+  }
+
+  .hide {
+    opacity: 0;
+    transition: 0.3s opacity ease-out;
+  }
 `;
