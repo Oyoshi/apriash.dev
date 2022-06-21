@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const SCHeader = styled.header`
   margin: 0 auto;
-  margin-top: ${({ theme }) => theme.spacings[5]};
+  margin-top: ${({ theme }) => theme.spacings[4]};
   @media only screen and (max-width: ${({ theme }) => theme.maxWidth}) {
     width: 90%;
   }
@@ -30,6 +30,7 @@ export const SCHeader = styled.header`
   .image {
     border-radius: 50%;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
   }
 
   .images {
